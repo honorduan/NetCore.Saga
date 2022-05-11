@@ -1,0 +1,45 @@
+syntax = "proto3";
+
+option csharp_namespace = "Kaytune.Saga.Client";
+
+package SagaEnvet;
+
+// The greeting service definition.
+service SagaEnvetService {
+  rpc OnConnect (SagaConfig)returns(stream GrpcCompensableArgs);
+  rpc SendEvent (GrpcEventMessage) returns(GrpcAck);
+  rpc OnDisconnected (SagaEnvet.SagaConfig) returns(GrpcAck);
+}
+
+message SagaConfig{
+	string serviceName = 1;
+	string serviceId= 2;
+}
+
+message GrpcAck{
+	bool aborted=1;
+}
+
+message GrpcEventMessage{
+	int64 timestamp = 1;
+	string globalId = 2;
+	string localId = 3;
+	string type = 4;
+	string ImplementMethod = 5;
+	bytes payloads = 6;
+	string serviceName = 7;
+	string ServiceId = 8;
+	int32 retries = 9;
+	string compensationMethod = 10;
+	string typeName=11; 
+}
+
+message GrpcCompensableArgs{
+	string globalId=1;
+	string localId=2;
+	string ImplementMethod=4;
+	string compensationMethod=5;
+	bytes payloads=6;
+	string typeName=7;
+}
+

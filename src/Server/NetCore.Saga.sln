@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32210.238
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetCore.Saga.Server", "NetCore.Saga.Server\NetCore.Saga.Server.csproj", "{E61C2F3B-C64A-4270-BD82-C873521436A2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetCore.Saga.Server.Mysql", "NetCore.Saga.Server.Mysql\NetCore.Saga.Server.Mysql.csproj", "{472B7451-C2C6-4F01-99FD-026D90F93CEC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetCore.Saga.Abstract", "NetCore.Saga.Abstract\NetCore.Saga.Abstract.csproj", "{F45A5E86-B3BE-42FA-9862-20C055EF888E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Server", "Server", "{F177BF0A-9CB5-440A-A660-0677938A0E89}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Client", "Client", "{56BF2F73-692C-4A29-9904-815447A57F8C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetCore.Saga.Clinet", "..\Client\NetCore.Saga.Clinet\NetCore.Saga.Clinet.csproj", "{6D830472-10CE-4ED7-9674-A671742FDA9B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E61C2F3B-C64A-4270-BD82-C873521436A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E61C2F3B-C64A-4270-BD82-C873521436A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E61C2F3B-C64A-4270-BD82-C873521436A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E61C2F3B-C64A-4270-BD82-C873521436A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{472B7451-C2C6-4F01-99FD-026D90F93CEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{472B7451-C2C6-4F01-99FD-026D90F93CEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{472B7451-C2C6-4F01-99FD-026D90F93CEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{472B7451-C2C6-4F01-99FD-026D90F93CEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F45A5E86-B3BE-42FA-9862-20C055EF888E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F45A5E86-B3BE-42FA-9862-20C055EF888E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F45A5E86-B3BE-42FA-9862-20C055EF888E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F45A5E86-B3BE-42FA-9862-20C055EF888E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D830472-10CE-4ED7-9674-A671742FDA9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D830472-10CE-4ED7-9674-A671742FDA9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D830472-10CE-4ED7-9674-A671742FDA9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D830472-10CE-4ED7-9674-A671742FDA9B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E61C2F3B-C64A-4270-BD82-C873521436A2} = {F177BF0A-9CB5-440A-A660-0677938A0E89}
+		{472B7451-C2C6-4F01-99FD-026D90F93CEC} = {F177BF0A-9CB5-440A-A660-0677938A0E89}
+		{F45A5E86-B3BE-42FA-9862-20C055EF888E} = {F177BF0A-9CB5-440A-A660-0677938A0E89}
+		{6D830472-10CE-4ED7-9674-A671742FDA9B} = {56BF2F73-692C-4A29-9904-815447A57F8C}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C903218B-7421-43E0-A004-4FBAFD9B0124}
+	EndGlobalSection
+EndGlobal
