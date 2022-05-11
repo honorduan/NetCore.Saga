@@ -1,1 +1,1 @@
-# NetCore.SagaServer
+# NetCore.Saga
